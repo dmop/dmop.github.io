@@ -43,7 +43,8 @@ function printModal() {
         const printFrame = document.createElement('iframe');
         // Set iframe element id
         printFrame.setAttribute('id', frameId)
-        printFrame.setAttribute('style', 'visibility: hidden; height: 0; width: 0; position: absolute; border: 0')
+
+        console.log(printFrame)
 
         const blobUrl = URL.createObjectURL(blob);
         // Set iframe src with pdf document url
