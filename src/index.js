@@ -32,7 +32,7 @@ async function prt() {
         window.open(blobUrl, '_blank');
     };
 
-    const base64Pdfs = [base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf];
+    const base64Pdfs = [base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf,base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf,base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf,base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf,base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf];
 
     const mergedPdf = await mergePdfs(base64Pdfs);
     const blob = blobPdfFromBaseUint8Array(mergedPdf);
