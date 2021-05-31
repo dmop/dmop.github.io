@@ -29,7 +29,8 @@ async function prt() {
     const downloadBlob = blob => {
         const blobUrl = URL.createObjectURL(blob);
 
-        window.open(blobUrl, "PRINT", "height=400,width=600");
+        const w = window.open(blobUrl);
+        w.print();
     };
 
     const base64Pdfs = [base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf,base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf,base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf,base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf,base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf];
