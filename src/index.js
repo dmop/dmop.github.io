@@ -29,11 +29,10 @@ async function prt() {
     const downloadBlob = blob => {
         const blobUrl = URL.createObjectURL(blob);
 
-        const w = window.open(blobUrl);
-        w.print();
+        window.open(blobUrl);
     };
 
-    const base64Pdfs = [base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf,base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf,base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf,base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf,base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf];
+    const base64Pdfs = [base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf, base64Pdf];
 
     const mergedPdf = await mergePdfs(base64Pdfs);
     const blob = blobPdfFromBaseUint8Array(mergedPdf);
