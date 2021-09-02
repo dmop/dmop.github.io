@@ -19,7 +19,7 @@ async function prt() {
         pri.print()
     }
 
-    printPartOfPage("test-blob", "ifmcontentstoprint");
+    printPartOfPage("table", "ifmcontentstoprint");
 }
 
 function printModal() {
